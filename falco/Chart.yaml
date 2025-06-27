@@ -1,10 +1,10 @@
 apiVersion: v2
-name: falcosecurity
-description: Mod chart for falcosecurity with AVP support
+name: falco
+description: Mod chart for falco with AVP support
 type: application
 version: 0.1.0
 
 dependencies:
-- name: falcosecurity
+- name: falco
   version: 6.0.1
   repository: https://falcosecurity.github.io/charts

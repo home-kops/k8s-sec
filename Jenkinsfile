@@ -17,9 +17,9 @@ pipeline {
       steps {
         container('jnlp') {
           sh '''
-            helm lint ./falcosecurity && \
-              helm dependency build ./falcosecurity && \
-              helm template ./falcosecurity -f ./falcosecurity/values.yaml
+            helm lint ./falco && \
+              helm dependency build ./falco && \
+              helm template ./falco -f ./falco/values.yaml
           '''
 
         }
