@@ -11,6 +11,10 @@ falco:
     operator: "Equal"
     value: "cp"
     effect: "NoSchedule"
+  falco:
+    http_output:
+      enabled: true
+      url: http://falco-falcosidekick:2801/
   falcosidekick:
     enabled: true
     webui:
