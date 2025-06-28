@@ -25,6 +25,6 @@ falco:
           paths:
           - path: /
     loki:
-      hostport: loki.<path:secret/data/infra#domain>:3100
+      hostport: loki.monitoring:3100
       grafanaDashboard:
         enabled: false
