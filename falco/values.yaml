@@ -31,5 +31,7 @@ falco:
     config:
       loki:
         hostport: http://loki.monitoring:3100
+        customHeaders:
+          X-Scope-OrgID: krieg
         grafanaDashboard:
           enabled: false
