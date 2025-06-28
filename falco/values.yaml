@@ -32,6 +32,6 @@ falco:
       loki:
         hostport: http://loki.monitoring:3100
         customheaders: "X-Scope-OrgID:krieg"
-        extraLabels: "from"
+        extraLabels: "from:falcosidekick"
         grafanaDashboard:
           enabled: false
