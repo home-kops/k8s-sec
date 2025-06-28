@@ -12,6 +12,10 @@ falco:
     value: "cp"
     effect: "NoSchedule"
   falco:
+    append_output:
+    - suggested_output: true
+    - extra_fields:
+      - from: "falcosidekick"
     http_output:
       enabled: true
       url: http://falco-falcosidekick:2801/
