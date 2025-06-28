@@ -30,6 +30,6 @@ falco:
           - path: /
     config:
       loki:
-        hostport: loki.monitoring:3100
+        hostport: http://loki.monitoring:3100
         grafanaDashboard:
           enabled: false
