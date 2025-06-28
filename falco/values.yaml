@@ -15,12 +15,12 @@ falco:
     enabled: true
     webui:
       enabled: true
-    ingress:
-      enabled: true
-      ingressClassName: traefik
-      annotations:
-        traefik.ingress.kubernetes.io/router.entrypoints: web
-      hosts:
-      - host: falco.<path:secret/data/infra#domain>
-        paths:
-        - path: /
+      ingress:
+        enabled: true
+        ingressClassName: traefik
+        annotations:
+          traefik.ingress.kubernetes.io/router.entrypoints: websecure
+        hosts:
+        - host: falco.<path:secret/data/infra#domain>
+          paths:
+          - path: /
